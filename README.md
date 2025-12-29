@@ -8,7 +8,7 @@ This project demonstrates **clean code structure**, **separation of concerns**, 
 ---
 
 ## 🔗 Live Demo
-> (Add link here if deployed with GitHub Pages / Netlify)
+https://atupcy-dev.github.io/job-application-tracker/
 
 ---
 
@@ -43,4 +43,3 @@ CSS3 (Flexbox)
 Vanilla JavaScript (ES6)
 
 Browser LocalStorage API
-
