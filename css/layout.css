@@ -1,0 +1,60 @@
+.header {
+    text-align: center;
+    padding: 20px;
+    background: #eef1f4;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+}
+
+.status.Applied {
+    background: #3498db;
+}
+
+.status.Interview {
+    background: #27ae60;
+}
+
+.status.Rejected {
+    background: #e74c3c;
+}

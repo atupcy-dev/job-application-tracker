@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Job Application Tracker</h1>
+        <p>Track applied jobs, interviews, rejections and notes.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Job Application</h2>
+
+            <form action="#" id="jobForm" method="POST">
+                <input id="company" placeholder="Company Name" required>
+                <input id="position" placeholder="Job Position" required>
+                <input id="date" type="date" placeholder="Application Date" required>
+
+                <select id="status">
+                    <option value="Applied">Applied</option>
+                    <option value="Interview">Interview</option>
+                    <option value="Rejected">Rejected</option>
+                </select>
+
+                <textarea id="notes" placeholder="Notes (optional)"></textarea>
+
+                <button type="submit">Add Jobs</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <div class="list-header">
+                <h2>Job Applications</h2>
+
+                <select id="filterStatus">
+                    <option value="All">All</option>
+                    <option value="Applied">Applied</option>
+                    <option value="Interview">Interview</option>
+                    <option value="Rejected">Rejected</option>
+                </select>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Notes</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="jobList"></tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="data/sample-data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

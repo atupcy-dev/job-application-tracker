@@ -1,0 +1,41 @@
+:root {
+    --primary: #0f7a5f;
+    --danger: #c0392b;
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --text: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: var(--bg);
+    margin: 0;
+    color: var(--text);
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button.delete {
+    background: var(--danger);
+}
+
+input, select, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
